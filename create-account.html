@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Book Stylist">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- title here -->
+  <title>Book Stylist</title>
+
+  <!-- favicon here -->
+  <link rel="icon" href="img/footer-logo.png" type="image/png" sizes="16x16">
+
+  <!-- all CSS here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/nice-select.css">
+  <link rel="stylesheet" href="css/jquery.datepicker2.css">
+  <link rel="stylesheet" href="css/font-face.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <!-- header area start -->
+  <header class="header alt topless">
+    <div class="container">
+      <div class="menubar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo-red.png" alt="book logo"></a>
+        </div>
+        <nav>
+          <ul class="main-menu">
+            <li><a href="cart.html">barbar profile</a></li>
+            <li><a href="book-appointment.html">booking</a></li>
+            <li><a href="index.html#all-page">all page</a></li>
+            <li><a href="create-account.html"><i class="far fa-user"></i> register/sign in</a></li>
+            <li><a href="login.html" class="button nav-btn">setup my business</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle alt">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header area end -->
+
+  <!-- create account area start -->
+  <main class="create-form-area">
+    <div class="create-account-form">
+      <div class="create-account-header">
+        <h3>Create Account</h3>
+        <p>Please fill in the details below</p>
+      </div>
+      <div class="create-account-body">
+        <div class="pro-pic-upload-area">
+          <div class="upload-btn">
+            <span class="label"><i class="fal fa-camera"></i> </span>
+            <input type="file" name="upload" id="upload" class="upload-box" placeholder="Upload File">
+          </div>
+
+          <div class="upload-text">
+            <h6>Upload your profile picture</h6>
+            <p>Please upload your best photo to show on <br> your profile image</p>
+          </div>
+        </div>
+
+        <div class="single-input">
+          <label for="create-name">Name</label>
+          <input type="text" id="create-name" placeholder="John Doe">
+        </div>
+
+        <div class="single-input">
+          <label for="create-name">Email Address</label>
+          <input type="text" id="create-mail" placeholder="johndoe@gmail.com">
+        </div>
+
+        <div class="single-input">
+          <label for="create-name">Date of Birth</label>
+          <input type="text" name="date" id="create-date" data-select="datepicker" placeholder="08-10-1996">
+        </div>
+
+        <div class="single-input">
+          <label for="create-name">Address</label>
+          <input type="text" id="create-address" placeholder="Hacienda Heights, NY">
+        </div>
+
+        <div class="double-input">
+          <div class="single-input" id="state">
+            <label>State</label>
+            <select class="create-form-select">
+              <option data-display="New York">Select one</option>
+              <option value="1">Chicago</option>
+              <option value="2">California</option>
+              <option value="4">Virginia</option>
+              <option value="4">Texas</option>
+            </select>
+          </div>
+
+          <div class="single-input" id="city">
+            <label>City</label>
+            <select class="create-form-select">
+              <option data-display="New York">Select one</option>
+              <option value="1">Chicago</option>
+              <option value="2">California</option>
+              <option value="4">Virginia</option>
+              <option value="4">Texas</option>
+            </select>
+          </div>
+        </div>
+
+        <span>Gender</span>
+        <div class="double-input">
+          <div class="single-input" id="male">
+            <label class="gender-label active">male
+              <input type="radio" name="gender" checked="checked">
+              <span class="gender-icon"><img src="img/male.png"></span>
+            </label>
+          </div>
+          <div class="single-input" id="female">
+            <label class="gender-label">female
+              <input type="radio" name="gender">
+              <span class="gender-icon"><img src="img/female.png"></span>
+            </label>
+          </div>
+        </div>
+        <button class="button full-width-btn">complete registration</button>
+      </div>
+    </div>
+  </main>
+  <!-- create account area end -->
+
+  <!-- jQuery JS -->
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="js/vendor/jquery-3.4.1.min.js"></script>
+
+  <!-- bootstrap JS -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- wow JS -->
+  <script src="js/wow.min.js"></script>
+
+  <!-- datepicker JS -->
+  <script src="js/jquery.datepicker2.min.js"></script>
+
+  <!-- country code JS -->
+  <script src="js/country-code.js"></script>
+
+  <!-- nice select JS -->
+  <script src="js/jquery.nice-select.min.js"></script>
+
+  <!-- main JS -->
+  <script src=" js/main.js"></script>
+
+  <script>
+    //nice select 
+    $('.create-form-select').niceSelect();
+  </script>
+
+</body>
+
+</html>

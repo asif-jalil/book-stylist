@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'hk grotesk';
+    src: url('../fonts/hkgrotesk-black-webfont.woff2') format('woff2'),
+        url('../fonts/hkgrotesk-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hk grotesk';
+    src: url('../fonts/hkgrotesk-bold-webfont.woff2') format('woff2'),
+        url('../fonts/hkgrotesk-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hk grotesk';
+    src: url('../fonts/hkgrotesk-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/hkgrotesk-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hk grotesk';
+    src: url('../fonts/hkgrotesk-medium-webfont.woff2') format('woff2'),
+        url('../fonts/hkgrotesk-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hk grotesk';
+    src: url('../fonts/hkgrotesk-regular-webfont.woff2') format('woff2'),
+        url('../fonts/hkgrotesk-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hk grotesk';
+    src: url('../fonts/hkgrotesk-light-webfont.woff2') format('woff2'),
+        url('../fonts/hkgrotesk-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'hk_grotesksemibold';
+    src: url('../fonts/hkgrotesk-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/hkgrotesk-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

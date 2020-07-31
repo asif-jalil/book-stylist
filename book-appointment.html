@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Book Stylist">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- title here -->
+  <title>Book Stylist</title>
+
+  <!-- favicon here -->
+  <link rel="icon" href="img/footer-logo.png" type="image/png" sizes="16x16">
+
+  <!-- all CSS here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/jquery.nice-number.min.css">
+  <link rel="stylesheet" href="css/fullcalender.css">
+  <link rel="stylesheet" href="css/font-face.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <!-- header area start -->
+  <header class="header alt topless">
+    <div class="container">
+      <div class="menubar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo-red.png" alt="book logo"></a>
+        </div>
+        <nav>
+          <ul class="main-menu logged">
+            <li><a href="cart.html">barbar profile</a></li>
+            <li><a href="book-appointment.html">booking</a></li>
+            <li><a href="#all-page">all page</a></li>
+            <li><a href="login.html">setup my business</a></li>
+          </ul>
+          <ul class="logged-menu">
+            <li class="mini-cart"><i class="fas fa-shopping-cart"></i> <span class="mini-cart-item-count">1</span></li>
+            <div class="mini-cart-area">
+              <h6 class="mini-cart-header">Cart</h6>
+              <span class="mini-cart-close"><i class="fal fa-times"></i></span>
+              <div class="mini-cart-body">
+                <div class="mini-cart-item">
+                  <div class="mini-cart-item-left">
+                    <span class="mini-cart-product-number">1</span>
+                    <span class="mini-cart-product-name">relaxed bob hair cut</span>
+                  </div>
+                  <div class="mini-cart-item-right">
+                    <div class="mini-cart-input">
+                      <input type="number" value="1">
+                    </div>
+                    <span class="mini-cart-price">$799</span>
+                    <span class="cart-cancle"><i class="fal fa-times-circle"></i></span>
+                  </div>
+                </div>
+
+                <div class="mini-cart-item">
+                  <div class="mini-cart-item-left">
+                    <span class="mini-cart-product-number">2</span>
+                    <span class="mini-cart-product-name">tide age hair cut</span>
+                  </div>
+                  <div class="mini-cart-item-right">
+                    <div class="mini-cart-input">
+                      <input type="number" value="1">
+                    </div>
+                    <span class="mini-cart-price">$799</span>
+                    <span class="cart-cancle"><i class="fal fa-times-circle"></i></span>
+                  </div>
+                </div>
+
+                <div class="mini-cart-item">
+                  <div class="mini-cart-item-left">
+                    <span class="mini-cart-product-number">3</span>
+                    <span class="mini-cart-product-name">galvanic facial</span>
+                  </div>
+                  <div class="mini-cart-item-right">
+                    <div class="mini-cart-input">
+                      <input type="number" value="1">
+                    </div>
+                    <span class="mini-cart-price">$799</span>
+                    <span class="cart-cancle"><i class="fal fa-times-circle"></i></span>
+                  </div>
+                </div>
+
+                <div class="mini-cart-item mini-cart-total">
+                  <h6>Total Price:</h6>
+                  <span class="total-price">$1498</span>
+                </div>
+              </div>
+              <div class="mini-cart-footer">
+                <button class="button mini-cart-btn btn-1">Open Cart</button>
+                <button class="button mini-cart-btn btn-2">Book Appointment</button>
+              </div>
+            </div>
+            <li class="account"><img src="img/avatar.png" alt="author"> <i class="far fa-angle-down"></i>
+              <ul>
+                <li><a href="#">dashboard</a></li>
+                <li><a href="#">profile</a></li>
+                <li><a href="#">messages</a></li>
+                <li><a href="#">notification</a></li>
+                <li><a href="#">account settings</a></li>
+                <li><a href="#">Log out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle alt">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header area end -->
+
+  <!-- booking area start -->
+  <section id="booking" class="booking">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="book-appointment">
+            <div class="book-appointment-header">
+              <h3>book appointment</h3>
+              <span>Please Select your appointment date and Time</span>
+            </div>
+            <div class="book-appointment-body">
+              <div class="row">
+                <div class="col-xl-8">
+                  <div class="booking-calender-wrapper booking-block-wrapper">
+                    <div class="block-header">
+                      <h4>choose date</h4>
+                    </div>
+                    <div class="block-body">
+                      <div id="booking-calendar"></div>
+                    </div>
+                  </div>
+                </div> <!-- col end -->
+
+                <div class="col-xl-4">
+                  <div class="appointment-time">
+                    <h4 class="title">choose time slot</h4>
+                    <div class="time-slot" id="morning-slot">
+                      <h5><i class="fal fa-sunrise"></i> Morning <span>8 AM - 12 PM</span></h5>
+                      <span class="time">8:00 AM</span>
+                      <span class="time">8:30 AM</span>
+                      <span class="time">9:00 AM</span>
+                      <span class="time">9:30 AM</span>
+                      <span class="time">10:00 AM</span>
+                      <span class="time active">10:30 AM</span>
+                      <span class="time">11:00 AM</span>
+                      <span class="time">11:30 AM</span>
+                    </div>
+
+                    <div class="time-slot" id="afternoon-slot">
+                      <h5><i class="fal fa-sun"></i> Afternoon <span>12 PM - 4 PM</span></h5>
+                      <span class="time">12:00 PM</span>
+                      <span class="time">12:30 PM</span>
+                      <span class="time">01:00 PM</span>
+                      <span class="time">01:30 PM</span>
+                      <span class="time">02:00 PM</span>
+                      <span class="time">02:30 PM</span>
+                      <span class="time">03:00 PM</span>
+                      <span class="time">03:30 PM</span>
+                    </div>
+
+                    <div class="time-slot" id="evening-slot">
+                      <h5><i class="fal fa-cloud-sun"></i> Evening <span>4 PM - 8 PM</span></h5>
+                      <span class="time">04:00 PM</span>
+                      <span class="time">04:30 PM</span>
+                      <span class="time">05:00 PM</span>
+                      <span class="time">05:30 PM</span>
+                      <span class="time">06:00 AM</span>
+                      <span class="time">06:30 PM</span>
+                      <span class="time">07:00 PM</span>
+                      <span class="time">07:30 PM</span>
+                    </div>
+                  </div>
+                </div> <!-- col end -->
+              </div> <!-- row end -->
+            </div>
+            <div class="booking-appointment-footer">
+              <div class="row">
+                <div class="col-xl-8">
+                  <div class="customers-board booking-block-wrapper">
+                    <div class="block-header">
+                      <h4>who is the customer?</h4>
+                      <span>+ add new customer</span>
+                    </div>
+                    <div class="block-body">
+                      <div class="booking-text-box">
+                        <h5>Willium Sam</h5>
+                        <span>+923039626640</span>
+                        <p>2982 Robinson Lane, HACKBERRY,
+                          LA, 70645</p>
+                      </div>
+
+                      <div class="booking-text-box">
+                        <h5>Willium Sam</h5>
+                        <span>+923039626640</span>
+                        <p>2982 Robinson Lane, HACKBERRY,
+                          LA, 70645</p>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- col end -->
+
+                <div class="col-xl-4">
+                  <div class="notes booking-block-wrapper">
+                    <div class="block-header">
+                      <h4>notes</h4>
+                    </div>
+                    <div class="block-body">
+                      <div class="booking-text-box">
+                        <p>Simply dummy text of the printing and typeset industry. Lorem Ipsum has been the
+                          industry’s .....</p>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- col end -->
+              </div> <!-- row end -->
+            </div>
+          </div>
+        </div> <!-- col end -->
+
+        <!-- sidebar start -->
+        <div class="col-lg-4">
+          <div class="sidebar-widget">
+            <div class="sidebar-content sidebar-barbar-widget">
+              <div class="appointer-details-wrapper">
+                <img src="img/pro-pic.png" alt="appointer" class="pro-pic">
+                <div class="appointer-details">
+                  <h4 class="profile-name">frankie thomas</h4>
+                  <div class="profile-review">
+                    <span class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="rating">(4.9) -</span>
+                    <span class="count">1220 Reviews</span>
+                  </div>
+                  <div class="business-hour">
+                    <i class="far fa-clock"></i>
+                    <span class="time">14:00 Today, Apr 14</span>
+                  </div>
+                  <p class="location">
+                    <i class="far fa-map-marker-alt"></i>
+                    <span>13222 Boyette Rd, Riverview, 33569, United Kingdom </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3 class="sidebar-title">selected services</h3>
+            <div class="checkout-calculate-wrapper">
+              <table class="checkout-calculate">
+                <tbody>
+                  <tr>
+                    <td class="checkout-product" scope="row">Relaxed Bob Hair Cut</td>
+                    <td class="checkout-price">$20</td>
+                  </tr>
+                  <tr>
+                    <td class="checkout-product" scope="row">Tide Edge Haircut</td>
+                    <td class="checkout-price">$60</td>
+                  </tr>
+                  <tr>
+                    <td class="checkout-product" scope="row">Galvanic Facial</td>
+                    <td class="checkout-price">$20</td>
+                  </tr>
+                  <tr>
+                    <td class="checkout-total" scope="row">Total</td>
+                    <td class="checkout-total-price">$100</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="sidebar-content checkout-method">
+              <div class="checkout-method-wrapper">
+                <div class="single-checkout-method" id="paypal">
+                  <div class="payment-title">
+                    <img src="img/checkout/paypal.png" alt="paypal">
+                    <span>Paypal</span>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-method-wrapper">
+                <div class="single-checkout-method" id="cash">
+                  <div class="payment-title">
+                    <img src="img/checkout/cash.png" alt="cash">
+                    <span>Cash On Shop</span>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-method-wrapper">
+                <div class="single-checkout-method active" id="card">
+                  <div class="payment-title">
+                    <img src="img/checkout/card.png" alt="card">
+                    <span>Credit Card/Debit Card</span>
+                  </div>
+                  <div class="payment-details">
+                    <div class="payment-input">
+                      <input type="text" id="card-name" placeholder="Card Holder Name">
+                    </div>
+                    <div class="payment-input">
+                      <input type="text" id="card-number" placeholder="Card Number">
+                      <img src="img/checkout/mastercard.png" alt="mastercard">
+                    </div>
+                    <div class="payment-input-group">
+                      <div class="payment-input card-date">
+                        <input type="text" id="card-date" placeholder="MM/YY">
+                      </div>
+                      <div class="payment-input card-cvv">
+                        <input type="text" id="card-cvv" placeholder="CVV">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="button full-width-btn" data-toggle="modal" data-target="#bookingPopup">
+                Book Now
+              </button>
+              <div class="modal fade booking-popup" id="bookingPopup" tabindex="-1" role="dialog" aria-labelledby="bookingPopup" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content ">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Your Appointment Confirmed</h5>
+                    </div>
+                    <div class="modal-body">
+                      <div class="modal-block">
+                        <i class="far fa-user"></i>
+                        <span class="title">specialist</span>
+                        <span class="name">angela hill</span>
+                        <span class="position">hair speacialist</span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="modal-block">
+                        <i class="far fa-calendar"></i>
+                        <span class="title">date</span>
+                        <span class="date">27 January 2020</span>
+                        <span class="time">3.00 - 4.00 PM</span>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="button booking-modal-btn-1" data-dismiss="modal">
+                        <i class="far fa-envelope"></i>Send <span>e-Mail</span>
+                      </button>
+                      <button class="button booking-modal-btn-2" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- col end -->
+      </div> <!-- row end -->
+    </div> <!-- container end -->
+  </section>
+  <!-- booking area end -->
+
+  <!-- footer area start -->
+  <footer class="footer-alt">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-intro">
+            <img src="img/logo-red.png" alt="logo">
+            <p>With over 100 million appointments booked, BookStylist offers powerful business tools for beauty and
+              barber professionals and it gives clients an easy way to discover and book services like haircuts and
+              makeup online.</p>
+            <div class="helpline">
+              <i class="fas fa-headset"></i>
+              <div class="helpline-info">
+                <p>get question? call us 24/7</p>
+                <h1>0123-4567890</h1>
+              </div>
+            </div>
+          </div>
+        </div> <!-- col end -->
+
+        <div class="col-lg-2 col-md-6">
+          <div class="important-menu" id="all-page">
+            <h5>all page</h5>
+            <ul>
+              <li><a href="barbar-details.html">barbar profile</a></li>
+              <li><a href="cart.html">barbar profile (logged in state)</a></li>
+              <li><a href="book-appointment.html">booking</a></li>
+              <li><a href="search-result.html">search result</a></li>
+              <li><a href="dashboard.html">my account</a></li>
+              <li><a href="login.html">login</a></li>
+              <li><a href="create-account.html">register</a></li>
+              <li><a href="varify.html">varify</a></li>
+            </ul>
+          </div>
+        </div> <!-- col end -->
+
+        <div class="col-lg-2 col-md-6">
+          <div class="customer-care">
+            <h5>customer care</h5>
+            <ul>
+              <li><a href="#">Terms & Conditons</a></li>
+              <li><a href="#">Privacy & Policy</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">How it works</a></li>
+            </ul>
+          </div>
+        </div> <!-- col end -->
+
+        <div class="col-lg-4 col-md-6">
+          <div class="newsletter">
+            <h5>Subscribe Newsletter</h5>
+            <p>Let’s stay updated on the latest news <br> and offers.</p>
+            <div class="subscription-field">
+              <input type="text" class="subscription-text" placeholder="Enter your email..">
+              <button class="button subscription-btn">subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- row end -->
+    </div> <!-- container end -->
+  </footer>
+
+  <div class="copyright">
+    <div class="container d-flex justify-content-between flex-column flex-md-row ">
+      <p>&#xA9; 2020 Copyright All Rights Reserved by Waleed Shabbir</p>
+      <ul class="footer-social">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- footer area end -->
+
+
+  <!-- jQuery JS -->
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="js/vendor/jquery-3.4.1.min.js"></script>
+
+  <!-- bootstrap JS -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- wow JS -->
+  <script src="js/wow.min.js"></script>
+
+  <!-- cart number spinner JS -->
+  <script src="js/jquery.nice-number.min.js"></script>
+
+  <!-- calender JS -->
+  <script src="js/fullcalendar.min.js"></script>
+
+  <!-- smooth scroll JS -->
+  <script src="js/smooth-scroll.min.js"></script>
+
+  <!-- main JS -->
+  <script src="js/main.js"></script>
+
+  <script>
+    //smooth scroll js
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Book Stylist" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- title here -->
+  <title>Book Stylist</title>
+
+  <!-- favicon here -->
+  <link rel="icon" href="img/footer-logo.png" type="image/png" sizes="16x16" />
+
+  <!-- all CSS here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/jquery.nice-number.min.css" />
+  <link rel="stylesheet" href="css/font-face.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+  <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <!-- header area start -->
+  <header class="header alt topless">
+    <div class="container">
+      <div class="menubar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo-red.png" alt="book logo" /></a>
+        </div>
+        <nav>
+          <ul class="main-menu logged">
+            <li><a href="cart.html">barbar profile</a></li>
+            <li><a href="book-appointment.html">booking</a></li>
+            <li><a href="index.html#all-page">all page</a></li>
+            <li><a href="login.html">setup my business</a></li>
+          </ul>
+          <ul class="logged-menu">
+            <li class="mini-cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="mini-cart-item-count">1</span>
+            </li>
+            <div class="mini-cart-area">
+              <h6 class="mini-cart-header">Cart</h6>
+              <span class="mini-cart-close"><i class="fal fa-times"></i></span>
+              <div class="mini-cart-body">
+                <div class="mini-cart-item">
+                  <div class="mini-cart-item-left">
+                    <span class="mini-cart-product-number">1</span>
+                    <span class="mini-cart-product-name">relaxed bob hair cut</span>
+                  </div>
+                  <div class="mini-cart-item-right">
+                    <div class="mini-cart-input">
+                      <input type="number" value="1" />
+                    </div>
+                    <span class="mini-cart-price">$799</span>
+                    <span class="cart-cancle"><i class="fal fa-times-circle"></i></span>
+                  </div>
+                </div>
+
+                <div class="mini-cart-item">
+                  <div class="mini-cart-item-left">
+                    <span class="mini-cart-product-number">2</span>
+                    <span class="mini-cart-product-name">tide age hair cut</span>
+                  </div>
+                  <div class="mini-cart-item-right">
+                    <div class="mini-cart-input">
+                      <input type="number" value="1" />
+                    </div>
+                    <span class="mini-cart-price">$799</span>
+                    <span class="cart-cancle"><i class="fal fa-times-circle"></i></span>
+                  </div>
+                </div>
+
+                <div class="mini-cart-item">
+                  <div class="mini-cart-item-left">
+                    <span class="mini-cart-product-number">3</span>
+                    <span class="mini-cart-product-name">galvanic facial</span>
+                  </div>
+                  <div class="mini-cart-item-right">
+                    <div class="mini-cart-input">
+                      <input type="number" value="1" />
+                    </div>
+                    <span class="mini-cart-price">$799</span>
+                    <span class="cart-cancle"><i class="fal fa-times-circle"></i></span>
+                  </div>
+                </div>
+
+                <div class="mini-cart-item mini-cart-total">
+                  <h6>Total Price:</h6>
+                  <span class="total-price">$1498</span>
+                </div>
+              </div>
+              <div class="mini-cart-footer">
+                <button class="button mini-cart-btn btn-1">Open Cart</button>
+                <button class="button mini-cart-btn btn-2">
+                  Book Appointment
+                </button>
+              </div>
+            </div>
+            <li class="account">
+              <img src="img/avatar.png" alt="author" />
+              <i class="far fa-angle-down"></i>
+              <ul>
+                <li><a href="#">dashboard</a></li>
+                <li><a href="#">profile</a></li>
+                <li><a href="#">messages</a></li>
+                <li><a href="#">notification</a></li>
+                <li><a href="#">account settings</a></li>
+                <li><a href="#">Log out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle alt">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header area end -->
+
+  <!-- page title area start -->
+  <div class="page-title">
+    <div>
+      <p><i class="fas fa-lock-alt"></i> speacial to me</p>
+      <h2>my dashboard</h2>
+    </div>
+  </div>
+  <!-- page title area end -->
+
+  <!-- dashboard area start -->
+  <section class="dashboard">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="dashboard-menu-wrapper">
+            <div class="dashboard-section-title">
+              my account
+            </div>
+            <div class="dashboard-owner">
+              <img src="img/author-big.png" alt="user" class="owner-img" />
+              <h4 class="name">William Sam</h4>
+            </div>
+
+            <div class="nav flex-lg-column flex-row nav-pills dashboard-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active" id="dashboard-profile-tab" data-toggle="pill" href="#dashboard-profile" role="tab" aria-controls="dashboard-profile" aria-selected="true"><span
+                  class="profile-tab-icon"><i class="fas fa-user"></i></span>
+                <span class="d-none d-lg-inline-block">My Profile</span></a>
+              <a class="nav-link" id="dashboard-appointment-tab" data-toggle="pill" href="#dashboard-appointment" role="tab" aria-controls="dashboard-appointment" aria-selected="false"><span
+                  class="profile-tab-icon"><i class="far fa-calendar"></i></span>
+                <span class="d-none d-lg-inline-block">My Appointments</span></a>
+              <a class="nav-link" id="dashboard-message-tab" data-toggle="pill" href="#dashboard-message" role="tab" aria-controls="dashboard-message" aria-selected="false"><span
+                  class="profile-tab-icon"><i class="fas fa-comments"></i></span>
+                <span class="d-none d-lg-inline-block">Messages</span></a>
+              <a class="nav-link" id="dashboard-payment-tab" data-toggle="pill" href="#dashboard-payment" role="tab" aria-controls="dashboard-payment" aria-selected="false"><span
+                  class="profile-tab-icon"><i class="fad fa-credit-card"></i></span>
+                <span class="d-none d-lg-inline-block">Payments</span></a>
+              <a class="nav-link" id="dashboard-address-tab" data-toggle="pill" href="#dashboard-address" role="tab" aria-controls="dashboard-address" aria-selected="false"><span
+                  class="profile-tab-icon"><i class="fas fa-map-marker-alt"></i></span>
+                <span class="d-none d-lg-inline-block">Address</span></a>
+              <a class="nav-link" id="dashboard-notification-tab" data-toggle="pill" href="#dashboard-notification" role="tab" aria-controls="vdashboard-notification" aria-selected="false"><span
+                  class="profile-tab-icon"><i class="fas fa-bell"></i></span>
+                <span class="d-none d-lg-inline-block">Notifications</span></a>
+              <a class="nav-link" id="dashboard-logout" href="#"><span class="profile-tab-icon"><i class="fas fa-sign-out-alt"></i></span>
+                <span class="d-none d-lg-inline-block">Logout</span></a>
+            </div>
+          </div>
+        </div>
+        <!-- col end -->
+
+        <div class="col-lg-8">
+          <div class="tab-content dashboard-menu-content-wrapper" id="v-pills-tabContent">
+            <div class="tab-pane dashboard-menu-content fade show active" id="dashboard-profile" role="tabpanel" aria-labelledby="dashboard-profile-tab">
+              <div class="single-tab-title">
+                <h4>Personal Information</h4>
+              </div>
+              <div class="single-tab-content">
+                <div class="dashboard-pro-pic-area">
+                  <div class="dashboard-pic-name">
+                    <img src="img/author-big.png" alt="willium" />
+                    <div>
+                      <h6>Willium Sam</h6>
+                      <label><input type="file" name="pro-pic" />Change
+                        Avatar</label>
+                    </div>
+                  </div>
+
+                  <div class="upload-btn">
+                    <span class="label">Browse image</span>
+                    <input type="file" name="upload" id="upload" class="upload-box" placeholder="Upload File" />
+                  </div>
+                </div>
+
+                <div class="account-info">
+                  <h5 id="title">Account Information</h5>
+                  <div class="edit-profile-fields">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="input-control">
+                          <label for="edit-f-name">First Name</label>
+                          <input type="text" id="edit-f-name" placeholder="Willium" />
+                        </div>
+                      </div>
+                      <!-- col end -->
+
+                      <div class="col-md-6">
+                        <div class="input-control">
+                          <label for="edit-l-name">Last Name</label>
+                          <input type="text" id="edit-l-name" placeholder="Sam" />
+                        </div>
+                      </div>
+                      <!-- col end -->
+
+                      <div class="col-md-6">
+                        <div class="input-control">
+                          <label for="edit-email">Email</label>
+                          <input type="text" id="edit-email" placeholder="Email" />
+                        </div>
+                      </div>
+                      <!-- col end -->
+
+                      <div class="col-md-6">
+                        <div class="input-control">
+                          <label for="edit-phone">Phone Number</label>
+                          <input type="text" id="edit-phone" placeholder="Phone Number" />
+                        </div>
+                      </div>
+                      <!-- col end -->
+
+                      <div class="col-12">
+                        <div class="input-control">
+                          <label for="edit-about">Full Name</label>
+                          <textarea name="about" id="edit-aobut" placeholder="Enter your description here"></textarea>
+                        </div>
+                      </div>
+                      <!-- col end -->
+
+                      <div class="col-12">
+                        <div class="edit-button-group">
+                          <button class="button edit-btn cancel">
+                            Cancel
+                          </button>
+                          <span><i class="fas fa-check"></i> all change
+                            saved</span>
+                          <button class="button edit-btn change">
+                            Save Changes
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- row end -->
+                  </div>
+                </div>
+                <!-- account-info end -->
+              </div>
+              <!-- single-tab-content end -->
+            </div>
+            <!-- tab end -->
+
+            <div class="tab-pane dashboard-menu-content fade" id="dashboard-appointment" role="tabpanel" aria-labelledby="dashboard-appointment-tab">
+              <div class="single-tab-title">
+                <h4>My Appointments</h4>
+              </div>
+              <div class="single-tab-content">
+                <div class="appointment-filter">
+                  <div class="appointment-filter-btn-group">
+                    <span class="appointment-filter-item active">upcoming</span>
+                    <span class="appointment-filter-item">past</span>
+                    <span class="appointment-filter-item">cancelled</span>
+                  </div>
+                </div>
+
+                <div class="appointment-list">
+                  <div class="sigle-appointment">
+                    <div class="appointer-person">
+                      <div class="appointer-details-wrapper">
+                        <img src="img/pro-pic.png" alt="appointer" class="pro-pic" />
+                        <div class="appointer-details">
+                          <h4 class="profile-name">frankie thomas</h4>
+                          <div class="profile-review">
+                            <span class="star">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="rating">(4.9) -</span>
+                            <span class="count">1220 Reviews</span>
+                          </div>
+                          <div class="business-hour">
+                            <i class="far fa-clock"></i>
+                            <span class="time">14:00 Today, Apr 14</span>
+                          </div>
+                          <p class="location">
+                            <i class="far fa-map-marker-alt"></i>
+                            <span>13222 Boyette Rd, Riverview, 33569, <br />
+                              United Kingdom
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="appointment-options">
+                        <div class="option">
+                          <div class="bullets">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <ul class="option-menu">
+                            <li>
+                              <i class="far fa-calendar-times"></i> Cancle
+                              Appointment
+                            </li>
+                            <li>
+                              <i class="far fa-calendar-day"></i> Reschedule
+                              Appointment
+                            </li>
+                            <li><i class="fas fa-eye"></i> View Details</li>
+                          </ul>
+                        </div>
+                        <img src="img/qr-code.png" alt="code" class="qr-code" />
+                      </div>
+                    </div>
+                    <div class="appointer-service">
+                      <h6>Service</h6>
+                      <div class="appointed-service-item">
+                        <span class="name">relax bob hair cut</span>
+                        <span class="price">$20</span>
+                      </div>
+                      <div class="appointed-service-item">
+                        <span class="name">tide edge haircut</span>
+                        <span class="price">$60</span>
+                      </div>
+                      <div class="appointed-service-item">
+                        <span class="name">galvanic facial</span>
+                        <span class="price">$20</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single-appointment end -->
+
+                  <div class="sigle-appointment">
+                    <div class="appointer-person">
+                      <div class="appointer-details-wrapper">
+                        <img src="img/pro-pic.png" alt="appointer" class="pro-pic" />
+                        <div class="appointer-details">
+                          <h4 class="profile-name">frankie thomas</h4>
+                          <div class="profile-review">
+                            <span class="star">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="rating">(4.9) -</span>
+                            <span class="count">1220 Reviews</span>
+                          </div>
+                          <div class="business-hour">
+                            <i class="far fa-clock"></i>
+                            <span class="time">14:00 Today, Apr 14</span>
+                          </div>
+                          <p class="location">
+                            <i class="far fa-map-marker-alt"></i>
+                            <span>13222 Boyette Rd, Riverview, 33569, <br />
+                              United Kingdom
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="appointment-options">
+                        <div class="option">
+                          <div class="bullets">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <ul class="option-menu">
+                            <li>
+                              <i class="far fa-calendar-times"></i> Cancle
+                              Appointment
+                            </li>
+                            <li>
+                              <i class="far fa-calendar-day"></i> Reschedule
+                              Appointment
+                            </li>
+                            <li><i class="fas fa-eye"></i> View Details</li>
+                          </ul>
+                        </div>
+                        <img src="img/qr-code.png" alt="code" class="qr-code" />
+                      </div>
+                    </div>
+                    <div class="appointer-service">
+                      <h6>Service</h6>
+                      <div class="appointed-service-item">
+                        <span class="name">relax bob hair cut</span>
+                        <span class="price">$20</span>
+                      </div>
+                      <div class="appointed-service-item">
+                        <span class="name">tide edge haircut</span>
+                        <span class="price">$60</span>
+                      </div>
+                      <div class="appointed-service-item">
+                        <span class="name">galvanic facial</span>
+                        <span class="price">$20</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single-appointment end -->
+                </div>
+              </div>
+              <!-- single-tab-content end -->
+            </div>
+            <!-- tab end -->
+
+            <div class="tab-pane dashboard-menu-content fade" id="dashboard-message" role="tabpanel" aria-labelledby="dashboard-message-tab">
+              <div class="chat-body">
+                <div class="chat-list">
+                  <h4 class="chat-tab-title">Messages</h4>
+                  <div class="messenger-wrapper active">
+                    <div class="messenger online">
+                      <div class="messenger-img">
+                        <img src="img/messenger/1.png" alt="mollie austin" />
+                      </div>
+                      <div class="msg-preview">
+                        <div class="meta">
+                          <h5 class="name">mollie austin</h5>
+                          <span class="time">2:34pm</span>
+                        </div>
+                        <p class="msg">Really? That’s great…</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="messenger-wrapper">
+                    <div class="messenger">
+                      <div class="messenger-img">
+                        <img src="img/messenger/2.png" alt="charlie sharp" />
+                      </div>
+                      <div class="msg-preview">
+                        <div class="meta">
+                          <h5 class="name">charlie sharp</h5>
+                          <span class="time">1:31pm</span>
+                        </div>
+                        <p class="msg">Where do you go?</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="messenger-wrapper">
+                    <div class="messenger online">
+                      <div class="messenger-img">
+                        <img src="img/messenger/3.png" alt="charlie sharp" />
+                      </div>
+                      <div class="msg-preview">
+                        <div class="meta">
+                          <h5 class="name">Maude McKinney</h5>
+                          <span class="time">9:12am</span>
+                        </div>
+                        <p class="msg">Amazing job!</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="messenger-wrapper">
+                    <div class="messenger">
+                      <div class="messenger-img">
+                        <img src="img/messenger/4.png" alt="charlie sharp" />
+                      </div>
+                      <div class="msg-preview">
+                        <div class="meta">
+                          <h5 class="name">Samuel Carlson</h5>
+                          <span class="time">8:32am</span>
+                        </div>
+                        <p class="msg">Ok</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="messenger-wrapper">
+                    <div class="messenger">
+                      <div class="messenger-img">
+                        <img src="img/messenger/5.png" alt="charlie sharp" />
+                      </div>
+                      <div class="msg-preview">
+                        <div class="meta">
+                          <h5 class="name">Hattie Brewer</h5>
+                          <span class="time">8:20am</span>
+                        </div>
+                        <p class="msg">Congratulations 😉</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="messenger-wrapper">
+                    <div class="messenger">
+                      <div class="messenger-img">
+                        <img src="img/messenger/6.png" alt="charlie sharp" />
+                      </div>
+                      <div class="msg-preview">
+                        <div class="meta">
+                          <h5 class="name">Eunice Diaz</h5>
+                          <span class="time">1:31pm</span>
+                        </div>
+                        <p class="msg">I’m ok</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- chat-list end -->
+
+                <div class="chatting-area">
+                  <div class="chat-head">
+                    <div class="chat-head-meta">
+                      <div class="chat-head-img">
+                        <img src="img/messenger/1.png" alt="mollie austin" />
+                      </div>
+                      <div class="chat-head-name">
+                        <h4>mollie austin</h4>
+                        <span>Active Now</span>
+                      </div>
+                    </div>
+                    <div class="chat-options">
+                      <div class="opiton-bullet">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="chat-box">
+                    <p class="time">2.03pm</p>
+                    <p class="my-text">Hello! How are you? 😊</p>
+                    <p class="messenger-text">
+                      I’m fine! What are you going to do this sumer?
+                    </p>
+                    <p class="my-text">
+                      I’m going to this amazing trip to Greece in June!
+                    </p>
+                    <p class="messenger-text">Really? That’s great! 😉</p>
+                    <p class="messenger-text">Show me some pics</p>
+                    <div class="typing-area">
+                      <span class="emoji"><i class="fas fa-laugh"></i></span>
+                      <input type="text" placeholder="Type a message" class="type-msg" />
+                      <span class="send"><img src="img/send-icon.png" alt="send" /></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- chatting-area end -->
+              </div>
+            </div>
+            <!-- tab end -->
+
+            <div class="tab-pane dashboard-menu-content fade" id="dashboard-payment" role="tabpanel" aria-labelledby="dashboard-payment-tab"></div>
+            <!-- tab-pane end -->
+
+            <div class="tab-pane dashboard-menu-content fade" id="dashboard-address" role="tabpanel" aria-labelledby="dashboard-address-tab">
+              <div class="single-tab-title">
+                <h4>Address</h4>
+                <span>Add Delevery Address</span>
+              </div>
+              <div class="single-tab-content">
+                <div class="row pt-4 pb-5">
+                  <div class="col-sm-6">
+                    <div class="dashboard-single-address active">
+                      <h5>Home</h5>
+                      <p class="designation">Syal UI UX,</p>
+                      <p class="location">
+                        2982 Robinson Lane, HACKBERRY, <br />
+                        LA, 70645
+                      </p>
+                      <div class="action-button">
+                        <i class="far fa-edit edit"></i>
+                        <i class="fas fa-trash-alt delete"></i>
+                      </div>
+                      <span class="active-dot"></span>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="dashboard-single-address">
+                      <h5>Home</h5>
+                      <p class="designation">Syal UI UX</p>
+                      <p class="location">
+                        2982 Robinson Lane, HACKBERRY, <br />
+                        LA, 70645
+                      </p>
+                      <div class="action-button">
+                        <i class="far fa-edit edit"></i>
+                        <i class="fas fa-trash-alt delete"></i>
+                      </div>
+                      <span class="active-dot"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab-pane end -->
+
+            <div class="tab-pane dashboard-menu-content fade" id="dashboard-notification" role="tabpanel" aria-labelledby="dashboard-notification-tab">
+              <div class="single-tab-title">
+                <h4>Notifications</h4>
+                <span>Clear All</span>
+              </div>
+              <div class="single-tab-content">
+                <div class="dashboard-new-notification">
+                  <div class="single-notification" id="ap-confirm">
+                    <span><i class="far fa-calendar-day"></i></span>
+                    <div class="notification-detail">
+                      <div class="head">
+                        <h4>appointment confirmed</h4>
+                        <span>10:53 PM</span>
+                      </div>
+                      <p>
+                        Addidas registered to your app, waiting for approval
+                      </p>
+                    </div>
+                  </div>
+                  <div class="single-notification" id="msg">
+                    <span><i class="fas fa-comment-dots"></i></span>
+                    <div class="notification-detail">
+                      <div class="head">
+                        <h4>new message</h4>
+                        <span>10:53 PM</span>
+                      </div>
+                      <p>
+                        John Smith sent you a new message " Hi ,hope you are
+                        well "
+                      </p>
+                    </div>
+                  </div>
+                  <div class="single-notification" id="ap-cancel">
+                    <span><i class="far fa-calendar-times"></i></span>
+                    <div class="notification-detail">
+                      <div class="head">
+                        <h4>appointment cancelled</h4>
+                        <span>10:53 PM</span>
+                      </div>
+                      <p>Your appointment Ref ID #85739 has been Cancelled</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="dashboard-old-notification">
+                  <h4>Old Notification</h4>
+                  <div class="single-notification" id="ap-confirm">
+                    <span><i class="far fa-calendar-day"></i></span>
+                    <div class="notification-detail">
+                      <div class="head">
+                        <h4>appointment confirmed</h4>
+                        <span>10:53 PM</span>
+                      </div>
+                      <p>
+                        Addidas registered to your app, waiting for approval
+                      </p>
+                    </div>
+                  </div>
+                  <div class="single-notification" id="msg">
+                    <span><i class="fas fa-comment-dots"></i></span>
+                    <div class="notification-detail">
+                      <div class="head">
+                        <h4>new message</h4>
+                        <span>10:53 PM</span>
+                      </div>
+                      <p>
+                        John Smith sent you a new message " Hi ,hope you are
+                        well "
+                      </p>
+                    </div>
+                  </div>
+                  <div class="single-notification" id="ap-cancel">
+                    <span><i class="far fa-calendar-times"></i></span>
+                    <div class="notification-detail">
+                      <div class="head">
+                        <h4>appointment cancelled</h4>
+                        <span>10:53 PM</span>
+                      </div>
+                      <p>Your appointment Ref ID #85739 has been Cancelled</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab end -->
+          </div>
+        </div>
+        <!-- col end -->
+      </div>
+      <!-- row end -->
+    </div>
+    <!-- container end -->
+  </section>
+  <div class="overlay"></div>
+  <!-- dashboard area end -->
+
+  <!-- jQuery JS -->
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="js/vendor/jquery-3.4.1.min.js"></script>
+
+  <!-- bootstrap JS -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- wow JS -->
+  <script src="js/wow.min.js"></script>
+
+  <!-- cart number spinner JS -->
+  <script src="js/jquery.nice-number.min.js"></script>
+
+  <!-- main JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
